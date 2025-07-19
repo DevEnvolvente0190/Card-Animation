@@ -7,6 +7,7 @@
 }
 body{
     background: #f1f1f1;
+    overflow: hidden;
 }
 .container{
     width: 600px;
@@ -18,9 +19,9 @@ body{
     overflow: hidden;
 }
 .card{
-    position: relative;
     width: 350px;
     height: 600px;
+    position: relative;
     background: #fff;
     border-radius: 30px;
     box-shadow: 0 0 15px 0 rgb(163,163,163);
@@ -40,18 +41,23 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.icons span{
-    font-size: 30px;
+.icons img{
     cursor: pointer;
-    padding: 1em;
+    padding: 2em;
+}
+.icons img.disable{
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
 }
 .card-top h3{
-    padding-left: 1.5em;
     font-size: 20px;
+    padding-left: 2em;
+    font-weight: 400;
 }
 .card-top h1{
-    padding-left: 1em;
     font-size: 30px;
+    padding-left: 1.3em;
     font-weight: 600;
 }
 .card-bottom{
@@ -62,39 +68,42 @@ body{
 .card-bottom h3{
     font-size: 16px;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 .card-bottom p {
     text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
-.card-bottom a{
+.bottom{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     padding: 10px;
-    border: 2px solid #0088d2;
+    width: 100%;
     margin-top: 15px;
-    border-radius: 10px;
+    font-size: 16px;
     text-decoration: none;
     color: #0088d2;
-    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #0088d2;
     transition: all 0.5s;
 }
-.card-bottom a:hover{
-    border: 2px solid #0088d2;
-    color: #fff;
+.buttom:hover{
     background: #0088d2;
+    color: #fff;
 }
-#tenis-1,
-#tenis-2{
+#tenis1,
+#tenis2{
     width: 450px;
     position: absolute;
-    transition: 1s;
     top: 190px;
+    transition: 1s;
 }
-#tenis-1{
+#tenis1{
     left: -50px;
 }
-#tenis-2{
+#tenis2{
     left: -650px;
 }
